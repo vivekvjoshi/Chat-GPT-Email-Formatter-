@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Email Formatter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Email Formatter</h1>
+    <textarea id="requestInput" placeholder="Enter your email formatting request"></textarea>
+    <label for="shortSweetCheckbox">
+      <input type="checkbox" id="shortSweetCheckbox" checked>
+      Make it short
+    </label>
+    <button id="submitBtn">Submit</button>
+    <div id="responseOutput"></div>
+    <div id="loadingIndicator" class="loader"></div>
+    <button id="copyBtn">Copy</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
