@@ -17,11 +17,9 @@ function generateResponse(inputText) {
   var myHeaders = new Headers();
   myHeaders.append(
     "Authorization",
-<<<<<<< HEAD
+
     "Bearer <<API Token>>"  //add your token here
-=======
-    "Bearer <<API Key>>"
->>>>>>> 032058798b9eb2554d43841bd1613c5d86701330
+
   );
   myHeaders.append("Content-Type", "application/json");
 
