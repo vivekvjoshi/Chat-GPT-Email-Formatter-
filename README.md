@@ -6,7 +6,7 @@ This is a professional email writer app designed to streamline the process of co
 
 ## API Key Configuration
 
-The Professional Email Writer App relies on an API key to send emails. To configure the API key, follow these steps:
+The Professional Email Writer App relies on an API key to generate  emails. To configure the API key, follow these steps:
 
 1. Obtain an API key from OpenAI
 2. Open the `Script.js` file located in the `src` directory.
