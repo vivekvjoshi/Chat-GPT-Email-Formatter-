@@ -8,7 +8,7 @@ This is a professional email writer app designed to streamline the process of co
 
 The Professional Email Writer App relies on an API key to send emails. To configure the API key, follow these steps:
 
-1. Obtain an API key from a reputable email service provider. (e.g., SendGrid, Mailgun)
+1. Obtain an API key from OpenAI
 2. Open the `Script.js` file located in the `src` directory.
 3. Navigate to line number 20 in the `Script.js` file.
 4. Replace the existing API key on line number 20 with your own API key.
