@@ -10,8 +10,8 @@ The Professional Email Writer App relies on an API key to generate  emails. To c
 
 1. Obtain an API key from OpenAI
 2. Open the `Script.js` file located in the `src` directory.
-3. Navigate to line number 20 in the `Script.js` file.
-4. Replace the existing API key on line number 20 with your own API key.
+3. Navigate to line number 34 in the `Script.js` file.
+4. Replace the existing API key on line number 34 with your own API key.
 5. Save the changes to the `Script.js` file.
 
 Please ensure that you keep your API key confidential and do not share it with unauthorized individuals.
