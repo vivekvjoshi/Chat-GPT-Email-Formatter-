@@ -2,39 +2,42 @@ const loadingIndicator = document.getElementById('loadingIndicator');
 const copyBtn = document.getElementById('copyBtn');
 const requestInput = document.getElementById('requestInput');
 const responseOutput = document.getElementById('responseOutput');
-const shortSweetCheckbox = document.getElementById('shortSweetCheckbox');
+let toneSelect = document.getElementById('toneSelect');
 copyBtn.style.display="none";
 
+let messagesToAPi =[];
 function generateResponse(inputText) {
   const message =
-    "Write this professionally" +
-    (shortSweetCheckbox.checked ? " and make it short." : "") +
-    "\nIn an email format for the below text:\n" +
+  
     inputText;
 
   console.log("message", message);
+  toneSelect = document.getElementById('toneSelect').value;
+  console.log("toneSelect",toneSelect)
+  messagesToAPi =[
+    {
+      role: "system",
+      content: "You are a professional Email writter . you are in tasked to write in  " + toneSelect +" tone , also do not Include I hope this message finds you well",
+    },
+    {
+      role: "user",
+      content: message,
+    },
+  ];
+
+  console.log("message",messagesToAPi)
+  
 
   var myHeaders = new Headers();
   myHeaders.append(
     "Authorization",
-
-    "Bearer <<API Token>>"  //add your token here
-
+    "Bearer <<API_TOKEN>>" //add your token Here
   );
   myHeaders.append("Content-Type", "application/json");
 
   var raw = JSON.stringify({
     model: "gpt-3.5-turbo",
-    messages: [
-      {
-        role: "system",
-        content: "You are a helpful assistant.",
-      },
-      {
-        role: "user",
-        content: message,
-      },
-    ],
+    messages: messagesToAPi,
   });
 
   var requestOptions = {
