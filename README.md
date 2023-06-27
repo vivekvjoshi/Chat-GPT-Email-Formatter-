@@ -12,9 +12,12 @@ The Professional Email Writer App relies on an API key to generate emails. To co
 4. Open the `Script.js` file located in the `ProCompose` directory.
 5. Replace the `API_TOKEN` variable with your own API key.
 6. Save the changes to the `Script.js` file.
-7. Go to the folder and start your Node JS server by executing `http-server`.
+7. Go to the folder and start your Node JS server by executing `http-server` in the terminal.
+8. This application will be accessable from the browser .
 
-Please ensure that you keep your API key confidential and do not share it with unauthorized individuals.
+Please ensure that you keep your API key confidential and do not share it with unauthorized individuals. 
+
+
 
 ## Contributing
 
