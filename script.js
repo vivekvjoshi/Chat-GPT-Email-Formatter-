@@ -7,11 +7,11 @@ copyBtn.style.display="none";
 
 const API_TOKEN ="Your open APi Key " // Define your Key Here
 let messagesToAPi =[];
-function generateResponse(inputText) {
+async function generateResponse(inputText) {
 
   if (API_TOKEN=="Your open APi Key "){
 
-    alert ( "Update y6our API key ")
+    alert ( "Update your API key ")
   }
 
   const message =
@@ -54,17 +54,17 @@ function generateResponse(inputText) {
     redirect: "follow",
   };
 
-  return fetch("https://api.openai.com/v1/chat/completions", requestOptions)
-    .then((response) => response.text())
-    .then((result) => {
-      console.log(result);
+  try {
+    const response = await fetch("https://api.openai.com/v1/chat/completions", requestOptions);
+    const result_1 = await response.text();
+    console.log(result_1);
 
-      restObj = JSON.parse(result);
-      console.log("response", restObj.choices[0].message.content);
-
-      return restObj.choices[0].message.content;
-    })
-    .catch((error) => console.log("error", error));
+    restObj = JSON.parse(result_1);
+    console.log("response", restObj.choices[0].message.content);
+    return restObj.choices[0].message.content;
+  } catch (error) {
+    return console.log("error", error);
+  }
 }
 
 function copyResponse() {
