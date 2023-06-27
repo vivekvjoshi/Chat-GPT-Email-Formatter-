@@ -2,19 +2,17 @@
 
 This is a professional email writer app designed to streamline the process of composing and sending professional emails. With this app, you can save time and effort by utilizing pre-designed email templates and automating certain aspects of the email writing process.
 
-
-
 ## API Key Configuration
 
-The Professional Email Writer App relies on an API key to generate  emails. To configure the API key, follow these steps:
+The Professional Email Writer App relies on an API key to generate emails. To configure the API key, follow these steps:
 
-  1.Install Node JS
-  2. Run the command to clone this repo ( git clone https://github.com/vivekvjoshi/ProCompose.git ) in Terminal 
-  2. Obtain an API key from OpenAI
-  3. Open the `Script.js` file located in the `ProCompose` directory.
-  4. Replace the API_TOKEN  variable with your own API key.
-  6. Save the changes to the `Script.js` file.
-  7. Go to the folder and start you node JS server by executing "http-server"
+1. Install Node JS
+2. Run the command to clone this repo (`git clone https://github.com/vivekvjoshi/ProCompose.git`) in Terminal
+3. Obtain an API key from OpenAI
+4. Open the `Script.js` file located in the `ProCompose` directory.
+5. Replace the `API_TOKEN` variable with your own API key.
+6. Save the changes to the `Script.js` file.
+7. Go to the folder and start your Node JS server by executing `http-server`.
 
 Please ensure that you keep your API key confidential and do not share it with unauthorized individuals.
 
