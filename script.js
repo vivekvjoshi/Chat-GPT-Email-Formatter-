@@ -5,8 +5,15 @@ const responseOutput = document.getElementById('responseOutput');
 let toneSelect = document.getElementById('toneSelect');
 copyBtn.style.display="none";
 
+const API_TOKEN ="Your open APi Key " // Define your Key Here
 let messagesToAPi =[];
 function generateResponse(inputText) {
+
+  if (API_TOKEN=="Your open APi Key "){
+
+    alert ( "Update y6our API key ")
+  }
+
   const message =
   
     inputText;
@@ -31,7 +38,7 @@ function generateResponse(inputText) {
   var myHeaders = new Headers();
   myHeaders.append(
     "Authorization",
-    "Bearer <<API_TOKEN>>" //add your token Here
+    "Bearer " +API_TOKEN //add your token Here
   );
   myHeaders.append("Content-Type", "application/json");
 
